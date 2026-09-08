@@ -1,0 +1,6 @@
+id,category,owner,status,priority,hours,sla
+LN-2001,Mortgage,Underwriting,Approved,Low,18,48
+LN-2002,Mortgage,Risk,Review,High,33,48
+QA-2003,Data discrepancy,QA,Open,Critical,5,8
+PM-2004,Payment exception,Operations,Closed,Medium,7,12
+LN-2005,Affordability,Underwriting,Review,High,20,36
