@@ -8,5 +8,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - run: python -m pip install pytest
       - run: python -m pytest -q
+      - run: node --test tests/web_model.test.cjs
+      - name: Verify website assets and syntax
+        run: |
+          test -s docs/index.html
+          test -s docs/styles.css
+          node --check docs/model.js
+          node --check docs/app.js
