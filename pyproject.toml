@@ -1,0 +1,9 @@
+[project]
+name = "mortgage-case-management-platform"
+version = "1.0.0"
+description = "Risk-aware customer, loan, payment and QA case operations."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
